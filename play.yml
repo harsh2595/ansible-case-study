@@ -1,0 +1,12 @@
+---
+- name: executing apache role for salve1
+  become: true
+  hosts: slave1
+  roles:
+  - apache
+
+- name: executing nginx role for salve2
+  become: true
+  hosts: slave2
+  roles:
+  - nginx
