@@ -1,0 +1,4 @@
+---
+- name: copying custom html file
+  copy: src=/etc/ansible/roles/apache/files/index.html
+        dest=/var/www/html
